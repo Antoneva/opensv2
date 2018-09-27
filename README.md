@@ -43,7 +43,5 @@ openshift: 内存设置为256M，每 project 可配置 4 Pods。
 }
 
 
-客户端： android Actinium、windows v2ray 可用同一个服务端。
-
 youtube频道：https://www.youtube.com/channel/UClceV39J1Z_9D4_mHkBZrMg
 
