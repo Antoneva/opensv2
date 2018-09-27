@@ -14,13 +14,33 @@
 # v2ray 部署在 openshift starter
 openshift: 内存设置为256M，每 project 可配置 4 Pods。
 
-
-
-Docker 镜像搜索：doudoubing/cundang
-（fork于wangyi2005/v2ray修改前）
-
-环境变量： CONFIG_JSON（配置）、
-
+环境变量： CONFIG_JSON（配置）
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbound": {
+    "protocol": "vmess",
+    "port": 8080,
+    "settings": {
+      "clients": [
+        {
+          "id": "UUID",
+          "alterId": 64,
+          "security": "chacha20-poly1305"
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws"
+    }
+  },
+  "inboundDetour": [],
+  "outbound": {
+    "protocol": "freedom",
+   "settings": {}
+  }
+}
 
 用notepad++将上述变量中 \r\n 替换为\\n，变成一行，导入容器。
 
