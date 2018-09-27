@@ -42,7 +42,6 @@ openshift: 内存设置为256M，每 project 可配置 4 Pods。
   }
 }
 
-用notepad++将上述变量中 \r\n 替换为\\n，变成一行，导入容器。
 
 客户端： android Actinium、windows v2ray 可用同一个服务端。
 
