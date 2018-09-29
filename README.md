@@ -43,5 +43,6 @@ openshift: 内存设置为256M，每 project 可配置 4 Pods。
 }
 
 
+
 youtube频道：https://www.youtube.com/channel/UClceV39J1Z_9D4_mHkBZrMg
 
